@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoloMoto MotoGP 2025</title>
+    <title>App de Apuestas MotoGP</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <!-- Animate.css -->
@@ -72,6 +72,33 @@
         .bet-button:hover {
             background: #ff3b2f;
         }
+        
+        
+        .message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            color: #ff6f61;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -86,8 +113,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="animate__animated animate__fadeInDown"> Apuesta y asado MotoGP 2025</h1>
-        <h3 class="animate__animated animate__fadeInDown"> Auspician Solo motos, Superbike y Pisteros</h3>
+        <h1 class="animate__animated animate__fadeInDown">App de Apuestas MotoGP</h1>
 
         <!-- Sección de Pilotos -->
         <div class="section animate__animated animate__fadeInUp">
@@ -98,272 +124,162 @@
                     <h3>Marc Márquez</h3>
                     <p>Equipo: Ducati Lenovo Team</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Francesco Bagnaia</h3>
                     <p>Equipo: Ducati Lenovo Team</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Pedro Acosta</h3>
                     <p>Equipo: Red Bull KTM Factory Racing</p>
                     <p>Contrato: Multi-anual</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Brad Binder</h3>
                     <p>Equipo: Red Bull KTM Factory Racing</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Jorge Martín</h3>
                     <p>Equipo: Aprilia Racing</p>
                     <p>Contrato: Multi-anual</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Marco Bezzecchi</h3>
                     <p>Equipo: Aprilia Racing</p>
                     <p>Contrato: Multi-anual</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Fabio Quartararo</h3>
                     <p>Equipo: Monster Energy Yamaha MotoGP</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Alex Rins</h3>
                     <p>Equipo: Monster Energy Yamaha MotoGP</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Luca Marini</h3>
                     <p>Equipo: Honda</p>
                     <p>Contrato: Finaliza en 2025</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Joan Mir</h3>
                     <p>Equipo: Honda</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Fabio Di Giannantonio</h3>
                     <p>Equipo: Pertamina Enduro VR46</p>
                     <p>Contrato: 2025 y 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Franco Morbidelli</h3>
                     <p>Equipo: Pertamina Enduro VR46</p>
                     <p>Contrato: Finaliza en 2025</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Alex Márquez</h3>
                     <p>Equipo: Gresini Racing MotoGP</p>
                     <p>Contrato: Finaliza en 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Fermín Aldeguer</h3>
                     <p>Equipo: Gresini Racing MotoGP</p>
                     <p>Contrato: 2025 y 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="voteMarketPilot()">Apostar por 2025</button>
+                    <div class="message" id="market-message"></div>
                 </div>
                 <div class="pilot-card">
                     <h3>Miguel Oliveira</h3>
                     <p>Equipo: Prima Pramac Racing</p>
                     <p>Contrato: 2025 y 2026</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Jack Miller</h3>
                     <p>Equipo: Prima Pramac Racing</p>
                     <p>Contrato: 2025</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Johann Zarco</h3>
                     <p>Equipo: LCR Honda Castrol</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Somkiat Chantra</h3>
                     <p>Equipo: LCR Honda Idemitsu</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Raúl Fernández</h3>
                     <p>Equipo: Trackhouse Racing</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Ai Ogura</h3>
                     <p>Equipo: Trackhouse Racing</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Maverick Viñales</h3>
                     <p>Equipo: Red Bull KTM Tech3</p>
                     <p>Contrato: Multi-anual</p>
-                    <button class="bet-button">Apostar por 2025</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
                 <div class="pilot-card">
                     <h3>Enea Bastianini</h3>
                     <p>Equipo: Red Bull KTM Tech3</p>
                     <p>Contrato: Multi-anual</p>
-                    <button class="bet-button">Apostar por 2025</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección del Calendario -->
-        <div class="section animate__animated animate__fadeInUp">
-            <h2>Calendario MotoGP 2025</h2>
-            <div class="race-list">
-                <!-- Lista de Carreras -->
-                <div class="race-card">
-                    <h3>GP1: Tailandia</h3>
-                    <p>Fecha: 28 Feb - 2 Mar</p>
-                    <p>Circuito: Buriram International Circuit</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP2: Argentina</h3>
-                    <p>Fecha: 14 Mar - 16 Mar</p>
-                    <p>Circuito: Termas de Río Hondo</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP3: Estados Unidos</h3>
-                    <p>Fecha: 28 Mar - 30 Mar</p>
-                    <p>Circuito: Circuit of the Americas</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP4: Qatar</h3>
-                    <p>Fecha: 11 Abr - 13 Abr</p>
-                    <p>Circuito: Lusail International Circuit</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP5: España</h3>
-                    <p>Fecha: 25 Abr - 27 Abr</p>
-                    <p>Circuito: Circuito de Jerez - Ángel Nieto</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP6: Francia</h3>
-                    <p>Fecha: 9 May - 11 May</p>
-                    <p>Circuito: Le Mans</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP7: Reino Unido</h3>
-                    <p>Fecha: 23 May - 25 May</p>
-                    <p>Circuito: Silverstone Circuit</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP8: Aragón</h3>
-                    <p>Fecha: 6 Jun - 8 Jun</p>
-                    <p>Circuito: MotorLand Aragón</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP9: Italia</h3>
-                    <p>Fecha: 20 Jun - 22 Jun</p>
-                    <p>Circuito: Autodromo Internazionale del Mugello</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP10: Países Bajos</h3>
-                    <p>Fecha: 27 Jun - 29 Jun</p>
-                    <p>Circuito: TT Circuit Assen</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP11: Alemania</h3>
-                    <p>Fecha: 11 Jul - 13 Jul</p>
-                    <p>Circuito: Sachsenring</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP12: República Checa</h3>
-                    <p>Fecha: 18 Jul - 20 Jul</p>
-                    <p>Circuito: Automotodrom Brno</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP13: Austria</h3>
-                    <p>Fecha: 15 Ago - 17 Ago</p>
-                    <p>Circuito: Red Bull Ring - Spielberg</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP14: Hungría</h3>
-                    <p>Fecha: 22 Ago - 24 Ago</p>
-                    <p>Circuito: Balaton Park</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP15: Cataluña</h3>
-                    <p>Fecha: 5 Sep - 7 Sep</p>
-                    <p>Circuito: Circuit de Barcelona-Catalunya</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP16: San Marino</h3>
-                    <p>Fecha: 12 Sep - 14 Sep</p>
-                    <p>Circuito: Misano World Circuit Marco Simoncelli</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP17: Japón</h3>
-                    <p>Fecha: 26 Sep - 28 Sep</p>
-                    <p>Circuito: Mobility Resort Motegi</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP18: Indonesia</h3>
-                    <p>Fecha: 3 Oct - 5 Oct</p>
-                    <p>Circuito: Pertamina Mandalika Circuit</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP19: Australia</h3>
-                    <p>Fecha: 17 Oct - 19 Oct</p>
-                    <p>Circuito: Phillip Island</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP20: Malasia</h3>
-                    <p>Fecha: 24 Oct - 26 Oct</p>
-                    <p>Circuito: Petronas Sepang International Circuit</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP21: Portugal</h3>
-                    <p>Fecha: 7 Nov - 9 Nov</p>
-                    <p>Circuito: Autódromo Internacional do Algarve</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
-                </div>
-                <div class="race-card">
-                    <h3>GP22: Valencia</h3>
-                    <p>Fecha: 14 Nov - 16 Nov</p>
-                    <p>Circuito: Circuit Ricardo Tormo</p>
-                    <button class="bet-button">Apostar en esta Carrera</button>
+                    <button class="bet-button" onclick="votePilot()">Apostar por 2025</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Audio for Sounds -->
+    <audio id="click-sound" src="https://www.soundjay.com/buttons/button-3.mp3"></audio>
+    <audio id="funny-sound" src="https://www.soundjay.com/misc/sound-effect-2.mp3"></audio>
+
+    <script>
+        // Function to play sound and show message for market pilot
+        function voteMarketPilot() {
+            const funnySound = document.getElementById('funny-sound');
+            funnySound.play();
+            document.getElementById('market-message').innerText = "Esperemos que gane o pierdes todo";
+        }
+
+        // Function to play sound for regular pilot
+        function votePilot() {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.play();
+             // Display the message
+            const messageElement = document.createElement('div');
+            messageElement.className = 'message';
+            messageElement.innerText = "Esperemos que gane o perdes todo!";
+            document.body.appendChild(messageElement);
+
+            // Remove the message after 10 seconds
+            setTimeout(() => {
+                messageElement.remove();
+            }, 50000); // 10 seconds
+        }
+    </script>
 </body>
 </html>
